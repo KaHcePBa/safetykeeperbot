@@ -10,9 +10,9 @@ url = 'https://www.virustotal.com/api/v3/urls'
 
 payload = {'url': 'https://click.ru/'}
 headers = {
-    'accept': 'application/json',
-    'x-apikey': settings.VIRUSTOTAL_APIKEY,
-    'content-type': 'application/x-www-form-urlencoded'
+	'accept': 'application/json',
+	'x-apikey': settings.VIRUSTOTAL_APIKEY,
+	'content-type': 'application/x-www-form-urlencoded'
 }
 
 response = requests.post(url, data=payload, headers=headers)
