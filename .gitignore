@@ -1,3 +1,23 @@
+**/Pipfile.lock
+**/.static
+**/.idea/
+**/__pycache__/
+**/*.py[cod]
+**/pip-log.txt
+**/*.log
+**/db.sqlite3
+**/db.sqlite3-journal
+**/.secrets.*
+**/.venv
+**/.env
+**/env/
+**/venv/
+**/ENV/
+**/env.bak/
+**/venv.bak/
+
+
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
