@@ -1,2 +1,3 @@
 development:
-  API_KEY: 'SECRET'
+  VIRUSTOTAL_APIKEY: 'secret'
+  BOT_APIKEY: 'secret'

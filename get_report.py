@@ -10,7 +10,7 @@ url = f"https://www.virustotal.com/api/v3/analyses/{ID}"
 
 headers = {
     "accept": "application/json",
-    "x-apikey": settings.API_KEY
+    "x-apikey": settings.VIRUSTOTAL_APIKEY
 }
 
 response = requests.get(url, headers=headers)

@@ -11,7 +11,7 @@ url = "https://www.virustotal.com/api/v3/urls"
 payload = {"url": "https://click.ru/"}
 headers = {
     "accept": "application/json",
-    "x-apikey": settings.API_KEY,
+    "x-apikey": settings.VIRUSTOTAL_APIKEY,
     "content-type": "application/x-www-form-urlencoded"
 }
 
