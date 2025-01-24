@@ -18,4 +18,4 @@ headers = {
 response = requests.post(url, data=payload, headers=headers)
 parsed_json = response.json()
 
-print(json.dumps(parsed_json, indent=4))
+print(json.dumps(parsed_json, indent=4, ensure_ascii=False))
