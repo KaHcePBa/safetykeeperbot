@@ -1,14 +1,10 @@
 import json
 
 import requests
-from dynaconf import LazySettings
 
-settings = LazySettings(
-    settings_files=['settings.yaml', '.secrets.yaml'],
-    envvar_prefix="VIRUSTOTAL_DYNACONF",
-    environments=True,
-    env='development',
-)
+import config.config
+
+settings = config.config.settings
 
 url = "https://www.virustotal.com/api/v3/urls"
 
