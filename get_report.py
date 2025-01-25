@@ -8,6 +8,12 @@ settings = config.config.settings
 ID = 'u-51be7fe9d14c6a57ac305d84954cb28ca236c44e78240de39faee7bf01f9db36-1737742303'
 
 url = f'{settings.VT_URL_REPORT}{ID}'
+# в урл лучше передавать links: self из ответа, чтобы не маяться с ID (надо подумать)
+# но для асинхронки думаю лучше оперировать все же ID и подставлять его в урл
+"""
+"links": {
+            "self": "https://www.virustotal.com/api/v3/analyses/u-51be7fe9d14c6a57ac305d84954cb28ca236c44e78240de39faee7bf01f9db36-1737801562"
+"""
 
 headers = {
     'accept': 'application/json',
@@ -34,7 +40,7 @@ else:
         print(f'HTTP: {response.status_code}')
         print(f'code: {error_code}')
         print(f"message: {error_message}")
-    # print(json.dumps(parsed_json, indent=4, ensure_ascii=False))
+    # Обработка ошибок
     except json.JSONDecodeError:
         # Если тело ответа не в формате JSON
         print(f"HTTP: {response.status_code}")
