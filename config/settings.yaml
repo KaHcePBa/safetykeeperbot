@@ -2,3 +2,4 @@ development:
   VIRUSTOTAL_APIKEY: 'secret'
   BOT_APIKEY: 'secret'
   VT_URL_START: 'secret'
+  VT_URL_REPORT: 'secret'
