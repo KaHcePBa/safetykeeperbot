@@ -6,13 +6,13 @@ import config.config
 
 settings = config.config.settings
 
-url = 'https://www.virustotal.com/api/v3/urls'
+url = settings.VT_URL_START
 
 payload = {'url': 'https://click.ru/'}
 headers = {
-	'accept': 'application/json',
-	'x-apikey': settings.VIRUSTOTAL_APIKEY,
-	'content-type': 'application/x-www-form-urlencoded'
+    'accept': 'application/json',
+    'x-apikey': settings.VIRUSTOTAL_APIKEY,
+    'content-type': 'application/x-www-form-urlencoded'
 }
 
 response = requests.post(url, data=payload, headers=headers)
