@@ -3,7 +3,7 @@ from dynaconf import LazySettings
 
 settings = LazySettings(
     settings_files=['settings.yaml', '.secrets.yaml'],
-    envvar_prefix="VIRUSTOTAL_DYNACONF",
+    envvar_prefix="DYNACONF",
     environments=True,
     env='development',
 )
