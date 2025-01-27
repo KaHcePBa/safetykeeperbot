@@ -6,6 +6,8 @@ name = "pypi"
 [packages]
 requests = "*"
 dynaconf = "*"
+aiogram = "*"
+asyncio = "*"
 
 [dev-packages]
 
