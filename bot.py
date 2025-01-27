@@ -8,6 +8,12 @@ from config.config import settings  # Импорт настроек из dynacon
 # Настройки
 dynaconf_settings = settings
 
+# ToDo
+#  1. Добавить APIKEY бота телеги
+#  2. Написать обработчик сообщений от пользователя
+#  3. Заложить логику общения с пользователем
+#  4. Добавить URL пользователя в get_analyze_url
+#  5. Вернуть в ответе результат прохождения проверки
 
 def get_analyze_url(url_to_analyze):
     """
