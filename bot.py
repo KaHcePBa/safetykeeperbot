@@ -88,15 +88,15 @@ def get_report(links_self):
 
 if __name__ == "__main__":
     # URL пользователя для анализа. Сюда передавать значение из message пользователя Telegram
-    users_url = 'https://click.ru/'
+    users_url = 'https://pc.uz/goto/4244'
 
     try:
         # Сначала получаю links.self (ссылка на результаты проверки) из функции get_analyze_url
         links_self = get_analyze_url(users_url)
 
         # Задержка 5 секунд для прохождения проверки
-        print("Ожидание 5 секунд перед получением отчёта...")
-        time.sleep(5)
+        print("Ожидание 10 секунд перед получением отчёта...")
+        time.sleep(10)
 
         # Передаю links.self в get_report для выгрузки результата проверки
         get_report(links_self)
