@@ -4,8 +4,8 @@ verify_ssl = true
 name = "pypi"
 
 [packages]
-requests = "*"
 dynaconf = "*"
+virustotal-python = "1.1.0"
 aiogram = "*"
 asyncio = "*"
 
